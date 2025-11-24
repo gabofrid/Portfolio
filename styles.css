@@ -185,3 +185,53 @@ body{
   margin-bottom: 25px;
   margin-top: -10px;
 }
+
+.experience {
+  padding: 35px 60px;
+  border-top: 3px solid rgba(0,0,0,0.15);
+  border-bottom: 3px solid rgba(0,0,0,0.15);
+  background: var(--bg);
+}
+
+.experience-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+.experience-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.experience-logo {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  flex: 0 0 auto;
+  margin-top: 5px;
+}
+
+.experience-content {
+  max-width: 900px;
+}
+
+.experience-role {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.experience-content p {
+  font-size: 17px;
+  line-height: 1.35;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.experience-skills {
+  margin-top: 6px;
+  font-weight: 700;
+}
