@@ -1,0 +1,119 @@
+:root{
+  --bg: #BFD7EA;
+  --header: #0A2342;
+  --footer: #2C3A47;
+  --text-light: #ffffff;
+  --text-dark: #0b0b0b;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: var(--bg);
+  color: var(--text-dark);
+}
+
+.header{
+  background: var(--header);
+  color: var(--text-light);
+  padding: 18px 28px;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header-quote{
+  font-size: 18px;
+  font-weight: 600;
+  max-width: 520px;
+}
+
+.header-icons{
+  display: flex;
+  gap: 14px;
+}
+
+.header-icons img{
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.main{
+  padding-top: 30px;
+}
+
+.hero{
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 40px;
+  min-height: 220px;
+}
+
+.profile-pic-wrap{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid var(--bg);
+  margin-top: -90px; /* esto es para que este sobre el header */ 
+}
+
+.profile-pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text h1{
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.hero-text p{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 6px;
+  color: #1a1a1a;
+}
+
+.footer{
+  background: var(--footer);
+  height: 70px;
+  padding: 0 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-light);
+  margin-top: 40px;
+}
+
+.footer-left{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+}
+
+.footer-left img{
+  width: 36px;
+  height: 36px;
+}
+
+.footer-icons{
+  display: flex;
+  gap: 12px;
+}
+
+.footer-icons img{
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
