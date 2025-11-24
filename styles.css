@@ -25,13 +25,15 @@ body{
   height: 130px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.header-quote{
+.header-quote {
   font-size: 18px;
   font-weight: 600;
   max-width: 520px;
+  display: flex;
+  align-items: center;
 }
 
 .header-icons{
@@ -53,7 +55,7 @@ body{
   display: flex;
   align-items: center;
   gap: 28px;
-  padding: 40px;
+  padding: 20px;
   min-height: 220px;
 }
 
@@ -63,7 +65,8 @@ body{
   border-radius: 50%;
   overflow: hidden;
   border: 6px solid var(--bg);
-  margin-top: -90px; /* esto es para que este sobre el header */ 
+  position: relative;
+  top: -60px;
 }
 
 .profile-pic{
@@ -234,4 +237,76 @@ body{
 .experience-skills {
   margin-top: 6px;
   font-weight: 700;
+}
+
+.projects {
+  padding: 35px 60px 45px;
+  background: var(--bg);
+  border-top: 3px solid rgba(0,0,0,0.15);
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 900;
+  margin-bottom: 28px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+.project-card {
+  text-align: center;
+  max-width: 420px;
+}
+
+.project-logo {
+  height: 200px;
+  width: auto;
+}
+
+.project-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.reveal-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 1s ease, transform 1s ease;
+  will-change: opacity, transform;
+}
+
+.reveal-right.show {
+  opacity: 1;
+  transform: translateX(0);
 }
